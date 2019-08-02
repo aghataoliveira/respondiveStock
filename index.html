@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <title>INM220 - Assignment 5 - javascript</title>
+</head>
+<body class="container">
+  <header class="container">
+    <section class="marca">
+      <!-- Burguer Menu -->
+      <div class="burguerMenu">
+      <a href="#" ><img width="75" height="75" src="images/menu-button.svg" alt="clipboard image" /></a>
+      </div>
+      <!-- logo -->
+      <div class="logo">
+        <h1><a href="#" ><img width="110" height="85" src="images/logo.svg" alt="clipboard image" /></a></h1>
+      </div>
+    </section>
+    <!-- stick-header -->
+    <div class="sticky-header">
+      <!-- Nav bar -->
+      <div class="container">
+        <nav class="sticky-header__main-nav">
+          <ul>
+            <li><a href="#top">Home</a></li>
+            <li><a href="#popular">Most Popular</a></li>
+            <li><a href="#photoCategories">Categories</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- Main -->
+  <main class="container">
+    <!-- HERO PHOTO -->
+    <div class= "hero">
+      <a href="#"><img  id="backphoto" src="images/hero2.jpg" alt="wonder woman backimage" /></a>
+    </div>
+    <!-- most popular section -->
+    <section class="mostPopular" id="popular">
+      <h1>Most Popular</h1>
+      <section class="popularPics" >
+        <article class="popular" id="pop1">
+          <a href="#"><img class="mainpop" src="images/hero.png" alt="pink flower" /></a>
+        </article>
+        <article class="popular" id="pop2">
+          <a href="#"><img class="pop"  src="images/flower2.png" alt="red flower" /></a>
+        </article>
+        <article class="popular" id="pop3">
+          <a href="#"><img class="pop"  src="images/flower3.png" alt="purple flower" /></a>
+        </article>
+        <article class="popular" id="pop4">
+          <a href="#"><img class="pop"  src="images/flower4.png" alt="yellow flower" /></a>
+        </article>
+        <article class="popular" id="pop5">
+          <a href="#"><img class="pop"  src="images/flower5.png" alt="white flower" /></a>
+        </article>
+      </section>
+    </section>
+    <!-- Categorie section -->
+    <section class="categories" id="photoCategories">
+      <h1>Categories</h1>
+      <section class= "photos" >
+        <article class="pic " id="flexItem1">
+          <p class="title">Car</p>
+          <a href="#"><img  id="photo1" src="images/car1.jpg" alt="car1" /></a>
+        </article>
+        <article class="pic" id="flexItem2">
+          <p class="title">Flower</p>
+          <a href="#"><img  id="photo2" src="images/flower2.png" alt="yellow flower" /></a>
+        </article>
+        <article class="pic" id="flexItem3">
+          <p class="title">Fashion</p>
+          <a href="#"><img class="flex-item" id="photo3" src="images/fashion.jpg" alt="car3" /></a>
+        </article>
+        <article class="pic" id="flexItem4">
+          <p class="title">Architecture</p>
+          <a href="#"><img class="flex-item" id="photo4" src="images/architecture.jpg" alt="car5" /></a>
+        </article>
+        <article class="pic" id="flexItem5">
+          <p class="title">Travel</p>
+          <a href=""><img class="flex-item" id="photo5" src="images/travel.jpg" alt="car4" /></a>
+        </article>
+      </section>
+    </section>
+    <div class="infos" >
+      <div id="contact"> Stock Photography - Stock@stock.com
+      </div>
+      <div class="sitefooter">
+        <form>
+          <fieldset class="information p-25-0">
+            <legend hidden>Informations</legend>
+            <!-- required form fields - email and password -->
+            <div class="row1 p-0-10">
+              <div>
+                <legend> Contact</legend>
+                <input name="name" id="Name" type="text" maxlength="40" placeholder="Name*" required />
+                <label for="Name" hidden> Name </label>
+              </div>
+              <div>
+                <label for="Email" hidden> Email </label>
+                <input id="Email" name="email" type="text" maxlength="40" placeholder="Email*" required />
+              </div>
+              <div>
+                <label for="message" hidden> message </label>
+                <textarea id="message" rows="4" cols="18" placeholder="Your Message..."></textarea>
+              </div>
+              <!-- submit button and errors -->
+              <div class= "submitBtn">
+                <label for="errors"  hidden>error</label>
+                <input name= "submit" type="submit" value="Submit" id="errors" />
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div>
+      <!-- this is the button to go to the top of the page -->
+      <button id="myBtn"><a href="#top" >
+      <!--  This part I am using a top image -->
+      <img src="images/top.svg" alt="top"></a>
+      <!--LINK JQUERY-->
+      <script type="text/javascript" src="javascript/main.js"></script>
+    </div>
+      <!-- copyright -->
+    <div class="container copyright">
+      &copy; 2019
+    </div>
+  </footer>
+</body>
+</html>
